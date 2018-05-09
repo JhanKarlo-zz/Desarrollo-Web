@@ -1,0 +1,43 @@
+.contenedor{
+	width: 1000px;
+	height: 600px;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+
+.contenedor:hover{
+	border: 10px solid black;
+}
+
+.fondo{
+	background-image: url('../images/fondo.png');
+	width: 1000px;
+	height: 600px;
+	background-size: cover;
+}
+
+.transicion{
+	transition: .3s;
+}
+
+.fondo:hover{
+	transform: scale(1.5);
+}
+
+.texto{
+	width: 150px;
+	height: 255px;
+	background: peachpuff;
+	text-align: justify;
+	position: absolute;
+	bottom: 180px;
+	left: 400px;
+	opacity: 0;
+	font-size: 13px;
+}
+
+.fondo:hover .texto{
+	opacity: 1;
+	transform: rotate(360deg)
+}
